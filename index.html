@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome</title>
+    <link rel="stylesheet" href="metronome.css">
+    <link rel="icon" href="icon.jpg">
+</head>
+<body style="background-color: darkblue;">
+    <div style="text-align: center;">
+        <label style="background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%); color: white; border-radius: 25%; font-size: 150px;" id="metronome">60 bpm</label><br>
+        <button class="myButton" id="start">Start</button>
+        <button class="myButton" id="stop">Stop</button><br>
+        <button class="myButton" onmousedown="changeTempo(change)" id="up">Speed Up</button>
+        <button class="myButton" onmousedown="changeTempo(-change)" id="down">Slow Down</button><br>
+        <label style="font-size: 50px; color: white;">(You can use up and down arrow keys to change the tempo faster)</label>
+        <script src="metronome.js"></script>
+    </div>
+</body>
+</html>
