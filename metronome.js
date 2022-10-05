@@ -1,11 +1,9 @@
 var metronomeLabel = document.getElementById(`metronome`),
 clickSound = document.createElement(`audio`),
-metronomeInterval = ``,
-change = 2,
-started = false
-clickSound.src = `click.wav`
+metronomeInterval = ``,change = 2,
+started = false, clickSound.src = `click.wav`
 document.getElementById(`start`).onclick = metronome
-document.getElementById(`stop`).onclick = function() {clearInterval(metronomeInterval), started = false}
+document.getElementById(`stop`).onclick = function() {clearInterval(metronomeInterval), started = false, metronomeLabel.style.color = ``}
 function metronome() {
     started = true
     clearInterval(metronomeInterval)
